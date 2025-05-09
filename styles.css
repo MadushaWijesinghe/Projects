@@ -1,0 +1,95 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light blue background color for the app */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center; /* Center align text inside the container */
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add space between form and the to-do list */
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 25%;
+    padding: 8px;
+    border: none;
+    background: #007bff; /* Blue background color for buttons */
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove margin from ul */
+}
+
+li {
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.finished {
+    text-decoration: line-through;
+    color: #999;
+}
+
+li button {
+    background: #dc3545; /* Red background color for remove buttons */
+    border: none;
+    color: #FFB6D9;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px; /* Add space between buttons */
+    transition: background-color 0.3s ease;
+}
+
+li button:hover {
+    background: #c82333; /* Darker red on hover */
+}
