@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Multi-field Sorting</title>
+</head>
+<body>
+
+<script>
+    const students = [
+        {ID:2023001, Grade:"A", Firstname:"Ann", Lastname:"Fernandz"},
+        {ID:2023002, Grade:"B", Firstname:"Barbera", Lastname:"Johnson"},
+        {ID:2023014, Grade:"C", Firstname:"Ann", Lastname:"Perera"},
+        {ID:2023024, Grade:"C", Firstname:"Raji", Lastname:"Bhakshi"},
+        {ID:2023019, Grade:"A", Firstname:"Mihiri", Lastname:"Perera"},
+        {ID:2023011, Grade:"B", Firstname:"Dil", Lastname:"Karunarathne"},
+        {ID:2023007, Grade:"B", Firstname:"Kalpani", Lastname:"Nandasena"},
+        {ID:2023021, Grade:"A", Firstname:"Sita", Lastname:"Kumal"},
+        {ID:2023006, Grade:"C", Firstname:"Dahal", Lastname:"Ujwal"},
+        {ID:2023015, Grade:"C", Firstname:"Nuwan", Lastname:"Pieris"}
+    ];
+
+    function customSort(array, fields) {
+        return array.sort((a, b) => {
+            for (let field of fields) {
+                if (a[field] < b[field]) return -1;
+                if (a[field] > b[field]) return 1;
+            }
+            return 0;
+        });
+    }
+
+    // Sort by ID, Grade, First Name, Last Name
+    const sortedStudents = customSort(students, ['ID', 'Grade', 'Firstname', 'Lastname']);
+    console.log("Sorted Students:", sortedStudents);
+</script>
+
+</body>
+</html>
