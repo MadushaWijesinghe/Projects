@@ -1,0 +1,225 @@
+/*Madusha Lakmali Wijesinghe (M23W0114)*/
+
+body {
+    font-family: 'Garamond', serif; /* Elegant font */
+    margin: 20px;
+    background: linear-gradient(to bottom right, #f8f5f0, #eae1cf); /* Subtle gradient background */
+    color: #333333; /* Dark grey text color */
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #d4af37; /* Gold border */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Softer shadow */
+    background-color: #ffffff; /* White background for the form container */
+    position: relative;
+    overflow: hidden;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #8B4513; /* Saddle brown label color for richness */
+    font-weight: bold;
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #d4af37; /* Gold border for inputs */
+    border-radius: 5px;
+    background-color: #fdfcf8; /* Light cream input background */
+}
+
+/*Madusha Lakmali Wijesinghe (M23W0114)*/
+input[type="submit"], input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    margin: 50 10px;
+}
+input[type="submit"] {
+    background-color: #006400; /* Dark green submit button */
+    color: white;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+input[type="reset"] {
+    background-color: #d4af37; /* Gold reset button */
+    color: white;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #004d00; /* Darker green on hover */
+    color: #f0e68c; /* Light gold text on hover */
+}
+input[type="reset"]:hover {
+    background-color: #b8860b; /* Darker gold on hover */
+    color: #fdfcf8; /* Light cream text on hover */
+}
+
+/*Madusha Lakmali Wijesinghe (M23W0114)*/
+#ball {
+    width: 40px;
+    height: 40px;
+    background-color: #d4af37; /* Gold animation color */
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0; /* Start from the bottom */
+    left: 0; /* Start from the left */
+}
+
+body {
+    font-family: 'Garamond', serif; /* Elegant font */
+    margin: 20px;
+    background: linear-gradient(to bottom right, #f8f5f0, #eae1cf); /* Subtle gradient background */
+    color: #333333; /* Dark grey text color */
+}
+.banner {
+    background-color: #d4af37; /* Gold background */
+    color: white;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Softer shadow */
+    margin-bottom: 20px;
+}
+
+/*Madusha Lakmali Wijesinghe (M23W0114)*/
+.banner h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f5f9f4;
+    background-color: #006400; /* Dark green background  */
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.clock {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 20px;
+    background-color: #006400; /* Dark green background for the clock */
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.output-container {
+    margin-top: 20px;
+}
+textarea {
+    background-color: #fdfcf8;
+    border: 1px solid #d4af37; /* Gold border for textarea */
+}
+h1 {
+    color: #922605; /* Maroon font color for heading */
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Garamond', serif;
+    animation: glow 2s linear infinite alternate;
+}
+
+/*Madusha Lakmali Wijesinghe (M23W0114)*/
+@keyframes glow {
+    from { text-shadow: 0 0 10px #ffd700; }
+    to { text-shadow: 0 0 20px #ffd700, 0 0 30px #b8860b; }
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+ul li {
+    display: inline;
+    margin: 0 15px;
+}
+ul li a {
+    text-decoration: none;
+    color: #006400; /* Dark green links */
+    font-weight: bold;
+}
+ul li a:hover {
+    text-decoration: underline;
+}
+
+legend {
+    font-weight: bold;
+    color: #8B4513; /* Saddle brown for legend */
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/*Madusha Lakmali Wijesinghe (M23W0114)*/
+.scale-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.scale-container label {
+    flex: 1;
+    text-align: center;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gender-label {
+    display: flex;
+    align-items: center;
+}
+.gender-label label {
+    margin-right: 10px;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact-method label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+.contact-method input[type="radio"] {
+    margin-right: 5px;
+}
+
+/*Madusha Lakmali Wijesinghe (M23W0114)*/
+.error{
+    color: red;
+    font-weight: bold;
+    display: none; /* Hide error by default */
+}
+
+footer {
+    background-color: #d4af37; /* Gold background */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Softer shadow */
+}
+
+footer h4,h6 {
+    margin: 5px 0;
+    font-weight: bold;
+   
+}

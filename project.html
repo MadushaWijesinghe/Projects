@@ -1,0 +1,220 @@
+
+<!-- Madusha Lakmali Wijesinghe (M23W0114)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madusha Wijesinghe (M23W0114)</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+    <body>
+        <div class="banner">
+            <h3>Madusha Lakmali Wijesinghe (M23W0114)</h3>
+            <div class="clock" id="clock"></div>
+        </div>
+    
+        <h1>Nutritionist/Dietitian Online Reservation Form</h1>
+        <br>
+        <br>
+        <div class="container" id="formContainer">
+            <form id="contactForm">
+                <fieldset>
+                    <legend>Personal Details:</legend>
+                    <div class="form-group">
+                        <label for="fname">1). Full Name:</label>
+                        <input type="text" id="fname" name="fname" value="John Fernandz">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">2). Email:</label>
+                        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@example.com">
+                        <small>Please enter a valid email address.</small> 
+                    </div>
+
+                    <!-- Madusha Lakmali Wijesinghe (M23W0114)-->
+                    <div class="form-group">
+                        <label for="phone">3). Enter your phone number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0777777777">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="birthday">4). Birthday (yyyy-mm-dd):</label>
+                        <input type="text" id="birthday" name="birthday" pattern="\d{4}-\d{2}-\d{2}" placeholder="YYYY-MM-DD">
+                    </div>
+                    <div class="form-group">
+                        <label for="age"> 5). Age:</label>
+                        <input type="number" id="age" name="age" min="0">
+                    </div>
+                    
+                    <div class="form-group"> 
+                        <label for="form-group">6). Gender:</label>
+                        <div class="gender-label">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="weight">7). Weight (kg):</label>
+                        <input type="number" id="weight" name="weight" >
+                    </div>
+
+                    <!-- Madusha Lakmali Wijesinghe (M23W0114)-->
+                    <div class="form-group">
+                        <label for="height"> 8). Height (cm):</label>
+                        <input type="number" id="height" name="height">
+                    </div>    
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Reservation Details:</legend>
+                    
+                    <div class="form-group">
+                        <label for="nutritionalConcerns"> 9). Select Your Nutritional Concern:</label>
+                        <div id="nutritionalConcerns">
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="weightReducing" name="nutritionalConcern" value="Weight Reducing">
+                                <label for="weightReducing">Weight Reducing</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="weightGaining" name="nutritionalConcern" value="Weight Gaining">
+                                <label for="weightGaining">Weight Gaining</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="weightMaintaining" name="nutritionalConcern" value="Weight Maintaining">
+                                <label for="weightMaintaining">Weight Maintaining</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="diabetic" name="nutritionalConcern" value="Diabetic">
+                                <label for="diabetic">Diabetic</label>
+                            </div>
+
+                            <!-- Madusha Lakmali Wijesinghe (M23W0114)-->
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="hyperlipidemia" name="nutritionalConcern" value="Hyperlipidemia">
+                                <label for="hyperlipidemia">Hyperlipidemia (High cholesterol)</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="fattyLiver" name="nutritionalConcern" value="Fatty Liver">
+                                <label for="fattyLiver">Fatty Liver</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="pcos" name="nutritionalConcern" value="PCOS">
+                                <label for="pcos">PCOS</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="kidneyDisease" name="nutritionalConcern" value="Kidney Disease">
+                                <label for="kidneyDisease">Kidney Disease</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="otherComplications" name="nutritionalConcern" value="Other">
+                                <label for="otherComplications">Other / 2 or more complications</label>
+                            </div>
+                        </div>
+                        <p>If other, please specify:</p>
+                        <input type="text" id="otherPlanInput" name="otherPlan" class="hidden" placeholder="Please specify">
+                    </div>
+
+                    <!-- Madusha Lakmali Wijesinghe (M23W0114)-->
+                    <div class="form-group">
+                        <label for="select">10). Select Your Dietitian:</label>
+                        <select id="select" name="select">
+                            <option>Madusha Wijesinghe</option>
+                            <option>Dilki Perera</option>
+                            <option>Nilushi Patabandi</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        
+                            <label for="days">11). Reserve a Day:</label>
+                            <select id="days" name="days" size="5" multiple>
+                                <option value="monday">Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                                <option value="Saturday">Saturday</option>
+                                <option value="Sunday">Sunday</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">12). Reservation Time:</label>
+                        <input type="time" id="time" name="time">
+                    </div>
+                </fieldset>
+                
+                <!-- Madusha Lakmali Wijesinghe (M23W0114)-->
+                <fieldset>
+                    <legend>Contact Preferences:</legend>
+                    <div class="form-group">
+                        <label for="contact-method">13). Preferred Contact Method:</label>
+                        <div class="contact-method">
+                            <input type="radio" id="contact-email" name="contact-method" value="email">
+                            <label for="contact-email">Email</label>
+                            <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                            <label for="contact-phone">Phone</label>
+                            
+                        </div>
+                    </div>
+                    
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Additional Information:</legend>
+    
+                    <div class="form-group">
+                        <label for="Allergies">14). Do you have food allergies?</label>
+                        <select id="Allergie" name="Allergie" size="5" multiple>
+                            <option value="None">None</option>
+                            <option value="Milk">Milk</option>
+                            <option value="Nuts">Nuts</option>
+                            <option value="SeaFood">Sea Food</option>
+                            <option value="Beef">Beef</option>
+                            <option value="Pineapple">Pineapple</option>
+                            <option value="Tomato">Tomato</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+    
+                    <!-- Madusha Lakmali Wijesinghe (M23W0114)-->
+                    <div class="form-group">
+                        <label for="satisfaction">15). Satisfaction Level (0-10):</label>
+                        <input type="range" id="satisfaction" name="satisfaction" min="0" max="10" value="0" onchange="updateTextInput(this.value);">
+                        <input type="text" id="satisfactionValue" name="satisfactionValue" value="0" readonly>
+                    </div>
+                </fieldset>
+    
+                <div class="button-group">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+            <br>
+            <div class="error" id="error">Please fill in all required fields correctly.</div>
+            <div class="output-container">
+                <h2>Form Output:</h2>
+                <div id="output"></div>
+            </div>
+            <div id="ball"></div>
+        </div>
+        
+
+    <script src="project.js"></script>
+
+</body>
+
+<!-- Madusha Lakmali Wijesinghe (M23W0114)-->
+<footer>
+    <h4> Stay Healthy! Be Happy!</h4>
+    <h4> @ NutriLife </h4>
+    <h6>Madusha Lakmali Wijesinghe (M23W0114)</h6>
+</footer>
+</html>
